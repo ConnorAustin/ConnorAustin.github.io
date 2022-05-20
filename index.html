@@ -1,1 +1,125 @@
-<h1>Hello!</h1>
+<!doctype html>
+
+<!-- Well hello there! -->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Connor Austin</title>
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Scope+One&display=swap');
+
+             :root {
+                --text-color: rgb(10, 10, 10);
+                --background-color:rgb(250, 250, 250);
+                --link-color: rgb(50, 85, 43);
+                --section-color: rgb(116, 148, 116); 
+                --header-color: rgb(8, 8, 8);
+                --main-font: 'Inconsolata';
+                --header-font: 'Scope One'
+             }
+
+            .header {
+                font-family: var(--header-font);
+                font-size: 4vw;
+                display: block;
+                text-align: center;
+                margin-bottom: 0;
+                background-color: ;
+                color: var(--header-color);
+            }
+
+            .contacts {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            a {
+                color: var(--link-color);
+            }
+
+            .contacts a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            body {
+                font-family: var(--main-font);
+                background-color: var(--background-color);
+                color: var(--text-color);
+                margin-bottom: 20px;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            .project h2 {
+                font-size: 2vw;
+            }
+
+            .project img {
+                width: 40vw;
+                height: 40vw;
+            }
+
+            .project p {
+                font-size: 1.5vw;
+            }
+
+            p {
+                font-size: 1.5vw;
+            }
+
+            .section {
+                margin-top: 50px;
+                font-size: 2.6vw;
+                display: block;
+                border: 0;
+                border-bottom: 0.17vw;
+                border-color: var(--text-color);
+                border-style: solid;
+                color: var(--text-color);
+            }
+
+            li {
+                font-size: 1.8vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="header">Connor Austin</h1>
+        <div class="contacts">
+            <a href="https://github.com/connoraustin">GitHub</a>
+            <a href="https://www.linkedin.com/in/cjaustin42">LinkedIn</a>
+            <a href="mailto:cjaustin42@gmail.com">cjaustin42@gmail.com</a>
+        </div>
+        <h2 class="section">About Me</h2>
+        <p>Hello! I am a software engineer and I build video games. I have a soft spot for older video game consoles because they are what got me interested in programming in the first place but I also like modern games as well. I also like coffee probably a little too much.</p>
+        <h2 class="section">Let's Play</h2>
+        <a>Play</a>
+        <h2 class="section">Projects</h2>
+        <div class="project">
+            <h2><a href="https://github.com/ConnorAustin/RustRaytracer/">SNES Controller</a></h2>
+            <p>Building a driver to communicate with an SNES controller</p>
+            <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://raw.githubusercontent.com/ConnorAustin/SNESController/master/SnesPic.jpg" /></a>
+        </div>
+        <div class="project">
+            <h2><a href="https://github.com/ConnorAustin/MipsSimulator/">MIPS Visual Simulator</a></h2>
+            <p>A visualization of the internals ongoings of a MIPS CPU</p>
+            <a href="https://github.com/ConnorAustin/MipsSimulator/"><img src="https://github.com/ConnorAustin/MipsSimulator/raw/master/example.gif" /></a>
+        </div>
+        <div class="project">
+            <h2><a href="https://github.com/ConnorAustin/RustRaytracer/">Rust Raytracer</a></h2>
+            <p>A terrible raytracer to dip my feet into Rust 🦀</p>
+            <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://github.com/ConnorAustin/RustRaytracer/raw/master/example.gif" /></a>
+        </div>
+        <h2 class="section">My Top 5 Video Games</h2>
+        <ol>
+            <li>Ocarina Of Time</li>
+            <li>Mother 3</li>
+            <li>Super Smash Bros Melee</li>
+            <li>Metal Gear Solid 4</li>
+            <li>Return of the Obra Dinn</li>
+        </ol> 
+    </body>
+</html>
