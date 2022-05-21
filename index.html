@@ -1,7 +1,7 @@
 <!doctype html>
 
 <!-- Well hello there! -->
-<!-- I am not much of a web developer so excuse the lack of visual flare here. -->
+<!-- I am not much of a web developer so please don't assume my C++ code looks like this. -->
 <!-- Feel free to email me! -->
 
 <html lang="en">
@@ -9,26 +9,38 @@
         <meta charset="utf-8">
         <title>Connor Austin</title>
         <style>
-             @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Scope+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Scope+One&display=swap');
 
-             :root {
-                --text-color: rgb(10, 10, 10);
-                --background-color:rgb(250, 250, 250);
+            :root {
+                --text-color: rgb(10, 15, 10);
+                --background-color:rgb(252, 254, 252);
                 --link-color: rgb(50, 85, 43);
                 --section-color: rgb(116, 148, 116); 
-                --header-color: rgb(8, 8, 8);
-                --main-font: 'Inconsolata';
-                --header-font: 'Scope One'
+                --header-color: rgb(8, 20, 8);
+                --main-font: 'Cutive Mono';
+                --header-font: 'Scope One';
+                --section-font: 'Cutive Mono';
+                --section-text-transform: none;
              }
 
             .header {
                 font-family: var(--header-font);
-                font-size: 4vw;
+                font-size: 5vw;
                 display: block;
                 text-align: center;
                 margin-bottom: 0;
-                background-color: ;
                 color: var(--header-color);
+            }
+
+            .subheader {
+                position: relative;
+                top: -1vw;
+                font-family: var(--header-font);
+                font-size: 1.2vw;
+                display: block;
+                text-align: center;
+                margin: 0;
+                color: var(--section-color);
             }
 
             .contacts {
@@ -44,6 +56,7 @@
             .contacts a {
                 margin-left: 0.7vw;
                 margin-right: 0.7vw;
+                font-size: 1.4vw;
             }
 
             body {
@@ -51,8 +64,8 @@
                 background-color: var(--background-color);
                 color: var(--text-color);
                 margin-bottom: 20px;
-                margin-left: 10%;
-                margin-right: 10%;
+                margin-left: 20%;
+                margin-right: 20%;
             }
 
             .project h2 {
@@ -81,10 +94,12 @@
                 border-color: var(--text-color);
                 border-style: solid;
                 color: var(--text-color);
+                font-family: var(--section-font);
+                text-transform: var(--section-text-transform);
             }
 
             li {
-                font-size: 1.8vw;
+                font-size: 1.6vw;
             }
 
             .skills {
@@ -96,12 +111,13 @@
 
             .skills h3 {
                 font-size: 1.5vw;
-                margin-right: 2.5vw;
+                margin-right: 3.2vw;
             }
         </style>
     </head>
     <body>
         <h1 class="header">Connor Austin</h1>
+        <h2 class="subheader">// Software Engineer</h2>
         <div class="contacts">
             <a href="https://github.com/ConnorAustin/resume/blob/master/ConnorAustin-Resume.pdf">Resume</a>
             <a href="https://github.com/connoraustin">GitHub</a>
@@ -109,7 +125,7 @@
             <a href="mailto:cjaustin42@gmail.com">cjaustin42@gmail.com</a>
         </div>
         <h2 class="section">About Me</h2>
-        <p>Hello! I am a software engineer and I build video games. I have a soft spot for older video game consoles, they are what got me interested in programming but I also like modern games as well. I also like coffee (probably a little too much) and music.</p>
+        <p>Hello! I am a software engineer and I build video games. Although I like a lot of modern games, I have a soft spot for older video games, they are what got me interested in programming. I also like coffee (probably a little too much) and music among other things.</p>
         <h2 class="section">Skills</h2>
         <div class="skills">
             <div>
@@ -173,11 +189,23 @@
             <p>A terrible raytracer to dip my feet into Rust 🦀</p>
             <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://github.com/ConnorAustin/RustRaytracer/raw/master/example.gif" /></a>
         </div>
+        <h2 class="section">My Favorite Technical Blogs</h2>
+        <ul>
+            <li><a href="https://cppcon.org/">CppCon</a></li>
+            <li><a href="https://devblogs.microsoft.com/oldnewthing/">The Old New Thing</a></li>
+            <li><a href="https://fabiensanglard.net/">Fabien Sanglard</a></li>
+            <li><a href="https://herbsutter.com/">Herb Sutter</a></li>
+            <li><a href="https://googleprojectzero.blogspot.com/">Project Zero</a></li>
+            <li><a href="https://lwn.net/">LWN</a></li>
+            <li><a href="https://dolphin-emu.org/blog/">Dolphin Emulator</a></li>
+            <li><a href="https://randomascii.wordpress.com/">Random ASCII</a></li>
+            <li><a href="https://this-week-in-rust.org/">This Week in Rust</a></li>
+        </ul>
         <h2 class="section">My Top 5 Video Games</h2>
         <ol>
             <li>Ocarina Of Time</li>
-            <li>Mother 3</li>
             <li>Super Smash Bros Melee</li>
+            <li>Mother 3</li>
             <li>Metal Gear Solid 4</li>
             <li>Return of the Obra Dinn</li>
         </ol>
