@@ -68,17 +68,29 @@
                 margin-right: 20%;
             }
 
+            .project {
+                width: 29vw;
+                margin: 1vw;
+                margin-top: 0;
+            }
+
             .project h2 {
                 font-size: 2vw;
             }
 
             .project img {
-                width: 40vw;
-                height: 40vw;
+                width: 20vw;
+                height: 20vw;
+                object-fit: cover;
             }
 
             .project p {
                 font-size: 1.5vw;
+            }
+
+            .project-line {
+                display: flex;
+                justify-content: space-between;
             }
 
             p {
@@ -112,6 +124,7 @@
             .skills h3 {
                 font-size: 1.5vw;
                 margin-right: 3.2vw;
+                margin-left: 1.5vw;
             }
         </style>
     </head>
@@ -174,20 +187,29 @@
             </div>
         </div>
         <h2 class="section">Projects</h2>
-        <div class="project">
-            <h2><a href="https://github.com/ConnorAustin/RustRaytracer/">SNES Controller</a></h2>
-            <p>Building a driver to communicate with an SNES controller</p>
-            <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://raw.githubusercontent.com/ConnorAustin/SNESController/master/SnesPic.jpg" /></a>
+        <div class="project-line">
+            <div class="project">
+                <h2><a href="https://github.com/ConnorAustin/RustRaytracer/">SNES Controller</a></h2>
+                <p>Building a driver to communicate with an SNES controller</p>
+                <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://raw.githubusercontent.com/ConnorAustin/SNESController/master/SnesPic.jpg" /></a>
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/ConnorAustin/MipsSimulator/">MIPS Visual Simulator</a></h2>
+                <p>A visualization of the internals ongoings of a MIPS CPU</p>
+                <a href="https://github.com/ConnorAustin/MipsSimulator/"><img src="https://github.com/ConnorAustin/MipsSimulator/raw/master/example.gif" /></a>
+            </div>
         </div>
-        <div class="project">
-            <h2><a href="https://github.com/ConnorAustin/MipsSimulator/">MIPS Visual Simulator</a></h2>
-            <p>A visualization of the internals ongoings of a MIPS CPU</p>
-            <a href="https://github.com/ConnorAustin/MipsSimulator/"><img src="https://github.com/ConnorAustin/MipsSimulator/raw/master/example.gif" /></a>
-        </div>
-        <div class="project">
-            <h2><a href="https://github.com/ConnorAustin/RustRaytracer/">Rust Raytracer</a></h2>
-            <p>A terrible raytracer to dip my feet into Rust 🦀</p>
-            <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://github.com/ConnorAustin/RustRaytracer/raw/master/example.gif" /></a>
+        <div class="project-line">
+            <div class="project">
+                <h2><a href="https://github.com/ConnorAustin/RustRaytracer/">Rust Raytracer</a></h2>
+                <p>A terrible raytracer to dip my feet into Rust 🦀</p>
+                <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://github.com/ConnorAustin/RustRaytracer/raw/master/example.gif" /></a>
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/ConnorAustin/RustRaytracer/">Rust Raytracer</a></h2>
+                <p>A terrible raytracer to dip my feet into Rust 🦀</p>
+                <a href="https://github.com/ConnorAustin/RustRaytracer/"><img src="https://raw.githubusercontent.com/ConnorAustin/RollMeUp/master/gameplay.gif" /></a>
+            </div>
         </div>
         <h2 class="section">My Favorite Technical Blogs</h2>
         <ul>
@@ -206,7 +228,7 @@
             <li>Ocarina Of Time</li>
             <li>Super Smash Bros Melee</li>
             <li>Mother 3</li>
-            <li>Metal Gear Solid 4</li>
+            <li>We Love Katamari Damacy</li>
             <li>Return of the Obra Dinn</li>
         </ol>
     </body>
